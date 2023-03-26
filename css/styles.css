@@ -1207,7 +1207,6 @@ color: var(--primary-button-color);
 }
 
 .advantages-item{
-    width: calc((100% - 24px) / 2);
     margin-bottom: 72px;
 }
 .advantages-item:nth-last-child(-n + 2) {
