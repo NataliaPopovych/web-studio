@@ -290,6 +290,9 @@ transition: color 250ms var(--time-transition);}
       row-gap: 72px;
       column-gap: 24px;
   }
+  .section{padding: 96px 0;}
+  .advant-title{font-weight: 700;
+  font-size: 36px;}
 }
 
 @media screen and (min-width:1200px) {
@@ -1206,9 +1209,6 @@ color: var(--primary-button-color);
     margin-bottom: 0;
 }
 
-.advantages-item{
-    margin-bottom: 72px;
-}
 .advantages-item:nth-last-child(-n + 2) {
   margin-bottom: 0;  
 }
