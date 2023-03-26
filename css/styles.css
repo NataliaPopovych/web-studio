@@ -323,7 +323,7 @@ transition: color 250ms var(--time-transition);}
       color: var(--color-title);
       text-align: center;
       font-size: 36px;
-      font-weight: 700;
+      font-weight: 500;
       line-height:1.1;
 
       margin-bottom: 8px;
