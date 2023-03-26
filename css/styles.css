@@ -290,9 +290,6 @@ transition: color 250ms var(--time-transition);}
       row-gap: 72px;
       column-gap: 24px;
   }
-  .advantages-item{
-      width: calc((100% - 24px) / 2);
-  }
 }
 
 @media screen and (min-width:1200px) {
