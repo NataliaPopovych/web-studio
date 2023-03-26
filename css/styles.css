@@ -373,7 +373,7 @@ transition: color 250ms var(--time-transition);}
 }
 .advant-title{
     margin-top: 8px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 36px;
     line-height: 1.12;
     letter-spacing: 0.02em;   
