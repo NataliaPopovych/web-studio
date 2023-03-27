@@ -617,8 +617,7 @@ img{
 }
 /************footer social-links**********************/
 .footer-social{
-    margin-left: 120px;
-  margin-right: 80px;}
+    margin-top: 72px}
 .footer-title{
     font-weight: 500;
     font-size: 16px;
@@ -661,7 +660,6 @@ img{
 .footer-subscribe{
     font-family: 'Roboto', sans-serif;
     display: block;
-    margin-top: 72px;
     text-align: center;
 }
 .footer-form{
