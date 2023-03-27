@@ -281,6 +281,10 @@ transition: color 250ms var(--time-transition);}
   padding: 96px 0;
   text-align: center;
 }
+.container.advantages{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 @media screen and (max-width:767px) {
   .advantages-item:not(:last-child){
       margin-bottom: 72px;
@@ -343,6 +347,9 @@ transition: color 250ms var(--time-transition);}
       margin-bottom: 8px;
       letter-spacing: 0.02em;
   }
+  .advant-description{
+    font-weight: 400;
+}
 }
 .advant-description{
   font-weight: 500;
@@ -350,11 +357,6 @@ transition: color 250ms var(--time-transition);}
   letter-spacing: 0.02em;
   margin-top: 8px;
   text-align: start;
-}
-@media screen and (min-width:1200px) {
-  .advant-description{
-      font-weight: 400;
-  }
 }
  
 .advantages-item{
