@@ -273,7 +273,7 @@ transition: color 250ms var(--time-transition);}
 }
 @media screen and (min-width:1200px) {
   .order{
-      padding: 188px 0;
+      padding: 120px 0;
   }
 }
 /*ADVANTAGES SECTION******************************/
@@ -285,6 +285,9 @@ transition: color 250ms var(--time-transition);}
   .advantages-item:not(:last-child){
       margin-bottom: 72px;
   }
+  .advantages-item{
+    width: calc((100% - 24px) / 2);
+}
 }
 
 @media screen and (min-width:768px) {
@@ -294,7 +297,9 @@ transition: color 250ms var(--time-transition);}
       row-gap: 72px;
       column-gap: 24px;
   }
-  .section{padding: 96px 0;}
+  .advantages-item{
+    width: calc((100% - 24px) / 2);
+} 
 
 }
 
@@ -323,18 +328,7 @@ transition: color 250ms var(--time-transition);}
   }
 }
 
-@media screen and (max-width:1199px) {
-  .advant-title{
-      letter-spacing: 0.02em;
-      color: var(--color-title);
-      text-align: center;
-      font-size: 36px;
-      font-weight: 700;
-      line-height:1.1;
 
-      margin-bottom: 8px;
-  }
-}
 @media screen and (min-width:768px){
   .advant-title{
       text-align: start;
@@ -354,6 +348,8 @@ transition: color 250ms var(--time-transition);}
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 8px;
+  text-align: start;
 }
 @media screen and (min-width:1200px) {
   .advant-description{
@@ -373,14 +369,11 @@ transition: color 250ms var(--time-transition);}
     width: 64px;
     height: 64px;
 }
-.advant-description{
-    margin-top: 8px;
-    text-align: start;
-}
+
 .advant-title{
     margin-top: 8px;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 36px;
     line-height: 1.12;
     letter-spacing: 0.02em;   
 color: var(--main-color-title);   
