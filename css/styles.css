@@ -279,6 +279,7 @@ transition: color 250ms var(--time-transition);}
 /*ADVANTAGES SECTION******************************/
 .section{
   padding: 96px 0;
+  text-align: center;
 }
 @media screen and (max-width:767px) {
   .advantages-item:not(:last-child){
