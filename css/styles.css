@@ -572,10 +572,22 @@ img{
 }
 .footer-content{
     display: flex;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media  screen and (min-width: 768px) {
+  .footer-content{
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    justify-content: start;
+    align-items: self-start;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:1199px){
+.container.footer-content { width: 582px;} 
 }
 .name{
         display: block;
@@ -587,6 +599,10 @@ img{
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 16px;}
+        @media screen and (max-width: 767px) {
+.name{text-align: center;}
+          
+        }
 .footer-logo{
   color: var(--logo-color);
   text-decoration: none;
@@ -610,11 +626,16 @@ img{
     letter-spacing: 0.02em;
     line-height: 1.5;
     text-align: center;
+    margin-bottom: 16px;
 }
 .footer-social-list{
     display: flex;
     gap: 16px;
     justify-content: center;
+    margin-bottom: 16px;
+}
+@media screen and (min-width:767){
+ .footer-social-list{margin: 0;} 
 }
 .footer-social-icon{
     max-width: 16px;
@@ -650,11 +671,9 @@ img{
     align-items: center;
 }
 .footer-form input {
-    max-width: 398px;
-    font-size: 12px;
-    line-height: 2;
-    width: 100%;
+    width: 264px;
     height: 40px;
+    line-height: 2;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
@@ -663,6 +682,11 @@ img{
     border-radius: 4px;
     padding: 8px 16px;
     transition: border-color 250ms var(--time-transition);
+  }
+  @media screen and (max-width:767px) {
+    .footer-subscribe{width: 100%;}
+    .footer-form input{width: 100%;
+    max-width: 398px;}
   }
   .footer-form input:hover,
   .footer-form input:focus{
@@ -674,25 +698,34 @@ img{
    
   .button-subscribe {
     position: relative;
-    gap: 16px;
-    border-radius: 4px;
-    padding: 8px 24px;
-    border: transparent;
-    width: 165px;
     display: flex;
-    background-color: var(--logo-color);
+    gap: 16px;
+    justify-content: center;
     text-align: center;
+    width: 165px;
+    height: 40px;
+    margin: 0;
+
+    margin-top: 40px;
+    margin-left: 24px;
+    padding: 8px 24px;
+
+    border: transparent;
+    
+    
+    background-color: var(--logo-color);
+   
     cursor: pointer;
     border-color: transparent;
-   margin: 0;
-   margin-left: 24px;
+   
+  
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--lead-color);
-    margin-top: 40px;
+    
     transition: background-color 250ms var(--time-transition);
   }
   
@@ -702,13 +735,30 @@ img{
   }
   
   .icon-subscribe{
-      position: absolute;
     height: 24px;
     width: 24px;
-    top: 50%;
-    right: 24px;
     fill: var(--lead-color);
-    transform: translate(-50%);
+  }
+  @media screen and (min-width:768px) {
+    .footer-form{ flex-direction: row;
+    }
+    .footer-social,
+    .button-subscribe{
+      margin: 0;
+    }
+    .button-subscribe{margin-left: 24px;}
+    .footer-form input { max-width: 264px;}
+    .footer-title{text-align: start;}
+    .footer-subscribe{display: flex;
+    flex-direction: column;}
+  }
+  @media screen and (min-width:1200px) {
+    .footer-content{
+      gap: 0;
+      padding: 0 15px;
+    }
+   .footer-social{margin-left: 120px;
+  margin-right: 80px;} 
   }
   /***********************modal********************/
   .backdrop{
@@ -1226,25 +1276,7 @@ color: var(--primary-button-color);
   .company-list-item:nth-child(3n) {
     margin-right: 0;
   }
-.footer-content{
-    display: flex;
-    align-items: start;
-    flex-wrap: wrap;
-    padding-left: 92px;
 }
-.footer-social{
-    display:block;
-    margin-top: 0;
-    margin-left: 24px;
-}
-input { display: inline;
-width: 264px}
-.subscribe-form {display: flex;}
-.button-subscribe { 
-    margin-top: 0;
-    margin-left: 24px;
-}
-.footer-subscribe{ text-align: start;}}
 /*************************************************************************************************************************/
 @media screen and (min-width: 1200px) {
    .container{
@@ -1265,24 +1297,7 @@ display: flex;
 .main-title{
     margin: 0 auto 48px;
 }
-
-  .footer  {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  .footer-social{
-    display: block;
-    margin-right: 120px;
-  }
-  .footer-title{ text-align: start;}
-  .footer-subscribe {display: block;
-    margin-left: 80px;
-    margin-top: 0;
-  }
-
-    input {
-    padding: 8px 24px; }
-  }
+}
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++*/                            
 @media screen and (max-width: 767px) {
     .menu {
