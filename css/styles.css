@@ -276,110 +276,88 @@ transition: color 250ms var(--time-transition);}
       padding: 120px 0;
   }
 }
-/*ADVANTAGES SECTION******************************/
-.section{
-  padding: 96px 0;
-  text-align: center;
-}
-.container.advantages{
-  padding-left: 15px;
-  padding-right: 15px;
-}
+/*valuesES SECTION******************************/
 @media screen and (max-width:767px) {
-  .advantages-item:not(:last-child){
+  .values-item:not(:last-child){
       margin-bottom: 72px;
   }
-  .advantages-item{
-    width: calc((100% - 24px) / 2);
-}
 }
 
 @media screen and (min-width:768px) {
-  .advantages-list{
+  .values-list{
       display: flex;
       flex-wrap: wrap;
       row-gap: 72px;
       column-gap: 24px;
   }
-  .advantages-item{
-    width: calc((100% - 24px) / 2);
-} 
-
+  .values-item{
+      width: calc((100% - 24px) / 2);
+  }
 }
 
 @media screen and (min-width:1200px) {
-  .advantages-list{
+  .values-list{
       margin: 0;
   }
-  .advantages-item{
+  .values-item{
       width: calc((100% - 24px * 3) / 4);
   }
 }
 
-.advantages-space{
+.space-values{
   display: flex; 
   justify-content: center;
   align-items: center;
   height:112px;
- 
-  background-color: var(--shadow-color);
+  
+  background-color: var(--logo-white-color);
   border-radius: 4px;
   margin-bottom: 8px;
 }
 @media screen and (max-width:1199px){
-  .advantages-space{
+  .space-values{
       display: none;
   }
 }
 
+@media screen and (max-width:1199px) {
+  .values__title-card{
+      letter-spacing: 0.02em;
+      color: var(--main-color-title));
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      line-height:1.1;
 
+      margin-bottom: 8px;
+  }
+}
 @media screen and (min-width:768px){
-  .advant-title{
+  .values__title-card{
       text-align: start;
   }
 }
 @media screen and (min-width:1200px) {
-  .advant-title{
-      color: var(--color-title);
+  .values__title-card{
+      color: var(--main-color-title);
       font-size: 20px;
       font-weight: 500;
       line-height:1.2;
       margin-bottom: 8px;
       letter-spacing: 0.02em;
   }
-  .advant-description{
-    font-weight: 400;
 }
-}
-.advant-description{
+.values__text-card{
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 8px;
-  text-align: start;
+}
+@media screen and (min-width:1200px) {
+  .values__text-card{
+      font-weight: 400;
+  }
 }
  
-.advantages-item{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    width: 264px;
-    color: var(--main-color-description)
-}
-
-.advantage-icon{
-    width: 64px;
-    height: 64px;
-}
-
-.advant-title{
-    margin-top: 8px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.12;
-    letter-spacing: 0.02em;   
-color: var(--main-color-title);   
-}
 /***********++++++++++++++++++++++++++++++*/
 .activity.section{
     display: none;
