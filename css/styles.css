@@ -310,7 +310,7 @@ transition: color 250ms var(--time-transition);}
   align-items: center;
   height:112px;
   
-  background-color: var(--logo-white-color);
+  background-color: var(--shadow-color);
   border-radius: 4px;
   margin-bottom: 8px;
 }
@@ -323,7 +323,7 @@ transition: color 250ms var(--time-transition);}
 @media screen and (max-width:1199px) {
   .values__title-card{
       letter-spacing: 0.02em;
-      color: var(--main-color-title));
+      color: var(--main-color-title);
       text-align: center;
       font-size: 36px;
       font-weight: 700;
@@ -930,6 +930,7 @@ img{
     width: 169px;
     height: 56px;
     padding: 0;
+    margin-top: 24px;
     color: var(--lead-color);
     background: var(--logo-color);
     border: 1px solid transparent;
